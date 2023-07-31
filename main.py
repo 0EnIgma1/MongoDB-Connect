@@ -43,7 +43,7 @@ if page == "Homepage":
 
     ```python
     #Dynamic Query - Pass query Directly from the Streamlit UI
-    select_command = col1.selectbox("Commands", options = ["None", "find", "find_one", "list_collections", "database", "collection"])
+    select_command = col1.selectbox("Commands", options = ["None", "find", "find_one", "list_collections", "collection"])
     query_command = col2.text_input("Enter your query")
     if select_command and query_command:    
         client.dynamic_query(select_command, query_command)
@@ -74,7 +74,7 @@ if page == "Homepage":
 
     col1, col2 = st.columns([1,3])
 
-    select_command = col1.selectbox("Commands", options = ["None", "find", "find_one", "list_collections", "database", "collection"])
+    select_command = col1.selectbox("Commands", options = ["None", "find", "find_one", "list_collections", "collection"])
 
     if select_command == "collection":
         change_collection = col2.selectbox("collections", options = list(client.list_collections()))

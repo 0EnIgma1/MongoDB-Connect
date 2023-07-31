@@ -108,7 +108,6 @@ if page == "Form Demo":
 
     st.text(" ")
 
-    print(client.find_one())
     with st.form("Data Form", clear_on_submit = True):
         name = st.text_input("Enter your Name")
         gender = st.text_input("Enter your Gender")

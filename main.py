@@ -16,7 +16,7 @@ if page == "Homepage":
 
     Try Form Demo, which contains a basic user form and pushes the data to the document in the collections database.
 
-    ## Functionalies:
+    ## Functionalities:
     - **_list_collections()_** - Lists all collections in a Database
     - **_database(database_name)_** - Moves to the specified Database
     - **_collection(collection_name)_** - Moves to the specified Collection

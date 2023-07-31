@@ -14,7 +14,7 @@ class MongoConnection(ExperimentalBaseConnection[pymongo.MongoClient]):
         if 'url' in kwargs:
             url = kwargs.pop('url')
         else:
-            url = "mongodb+srv://MongoMan:root123@mycluster.0sm9l94.mongodb.net/?retryWrites=true&w=majority" #st.secrets.get("url")
+            url = st.secrets.get("url")
             client = MongoClient(url)
         return client
     

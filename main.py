@@ -1,6 +1,12 @@
 import streamlit as st
 from mongo_connect import MongoConnection
 
+st.set_page_config(
+    page_title="Mongo Connect",
+    page_icon="🕸",
+    #layout="wide",
+    initial_sidebar_state="expanded",
+)
 page = st.sidebar.radio("Pages", ["Homepage", "Form Demo"])
 
 #Connection Establishment

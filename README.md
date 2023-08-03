@@ -40,4 +40,3 @@ query_command = col2.text_input("Enter your query")
 if select_command and query_command:    
     client.dynamic_query(select_command, query_command)
 ```
-[application Link]("https://mongoconnect.streamlit.app/")
